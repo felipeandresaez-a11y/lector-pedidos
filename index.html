@@ -1,0 +1,7 @@
+// Este es el "filtro" que buscará tu número de pedido
+const patronPedido = /#\s?(\d{6})/; 
+
+if (textoDetectado.match(patronPedido)) {
+    let numeroPedido = textoDetectado.match(patronPedido)[1];
+    alert("¡Pedido capturado!: " + numeroPedido);
+}
